@@ -1,5 +1,7 @@
 ## Getting Started
 
+cd cat-app
+
 Install packages with:
 
 npm install
@@ -19,3 +21,9 @@ All the functionalities are still there.
 
 The filter functionality is made by using a [category] page. I have decided to use this method to save some time and not have to call the API every time a filter is selected.
 Instead, I preferred to redirect to a dedicated page called "category".
+
+Link to the repo: https://github.com/antoniowav/the-cat-app
+
+Thanks!
+
+Toni
