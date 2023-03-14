@@ -1,0 +1,69 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6rem;
+  min-height: 100vh;
+}
+.breedSection {
+  margin-top: 10rem;
+  padding: 1rem;
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-gap: 3rem;
+  gap: 3rem;
+}
+
+.breedWrapper {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.breedTextContainer {
+  grid-column: span 1;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  text-align: start;
+}
+
+.breedImageContainer {
+  width: 4rem;
+  height: 2rem;
+  grid-column: span 1;
+}
+.breedSingleImageContainer {
+  width: 100%;
+  height: 20rem;
+}
+.breedSingleImageContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media screen and (orientation: portrait) {
+  .main,
+  .section {
+    padding: 0;
+    gap: 0;
+    grid-gap: 0;
+  }
+  .breedSection {
+    padding: 0;
+  }
+  .breedWrapper {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+  }
+  .breedTextContainer {
+    grid-column: span 4;
+    margin: 0 1rem;
+  }
+  .breedSingleImageContainer {
+    grid-column: span 2;
+  }
+}
